@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0.5849056, g: 0.041384827, b: 0.25696966, a: 1}
+  material: {fileID: 2100000, guid: d187674fb4069a04f883e508369f5b6a, type: 2}
   dimension: {x: 2, y: 3, z: 1}
   values: 010000000100000001000000000000000100000000000000
   wireFrameMode: 0

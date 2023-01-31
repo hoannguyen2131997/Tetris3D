@@ -11,10 +11,25 @@ namespace Spellcast
     public class TetrisPiece : MonoBehaviour
     {
         public Color color;
+        public Material material;
         public Vector3Int dimension;
         public List<int> values;
         public bool wireFrameMode = false;
-        
+
+        private Material coloredMaterial;
+        public Material ColoredMaterial
+        {
+            get
+            {
+                if (coloredMaterial == null)
+                {
+                    coloredMaterial = new Material(material);
+                    coloredMaterial.color = color;
+                }
+
+                return coloredMaterial;
+            }
+        }
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
